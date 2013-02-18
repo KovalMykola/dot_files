@@ -85,3 +85,12 @@ map <S-Space> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 nnoremap <C-F11> <Esc>:NERDTreeToggle<CR>
 " regenerate tag list
 nnoremap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
+
+
+"""""""""""""""""""""""""""""""""
+" CtrlP plugin
+"""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|zip|rar|swp)$'
+  \ }
