@@ -12,10 +12,11 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
 
 Bundle 'PA_ruby_ri'
 Bundle 'Yggdroot/indentLine'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'rking/ag.vim'
 
 
 filetype plugin indent on
