@@ -14,9 +14,11 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 
 Bundle 'PA_ruby_ri'
-Bundle 'Yggdroot/indentLine'
+" `indentLine` eats a lot of resources
+"Bundle 'Yggdroot/indentLine'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'rking/ag.vim'
+Bundle 'sjl/gundo.vim'
 
 
 filetype plugin indent on
@@ -102,6 +104,10 @@ map ,f [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 nnoremap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
 " toggle nert-tree-left-side window
 nnoremap <C-F11> <Esc>:NERDTreeToggle<CR>
+" start Ag!
+nnoremap <C-F7> <Esc>:Ag!
+" toggle gundo-left-side window
+nnoremap <C-F6> :GundoToggle<CR>
 
 
 
@@ -110,3 +116,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll|zip|rar|swp)$'
   \ }
+
+" Ag plugin
+let g:agprg="ag --column --smart-case"
+let g:aghighlight=1
