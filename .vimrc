@@ -19,6 +19,7 @@ Bundle 'PA_ruby_ri'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'rking/ag.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'jlanzarotta/bufexplorer'
 
 
 filetype plugin indent on
