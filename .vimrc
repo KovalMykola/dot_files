@@ -14,21 +14,23 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 
 Bundle 'PA_ruby_ri'
-" `indentLine` eats a lot of resources
-"Bundle 'Yggdroot/indentLine'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'rking/ag.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'jlanzarotta/bufexplorer'
+Bundle 'ap/vim-css-color'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'godlygeek/tabular'
+Bundle 'yaymukund/vim-rabl'
 
-
+filetype plugin on
 filetype plugin indent on
 filetype indent on
 filetype on
 syntax on
 
 " Misc
-set history=500                     " Number of things to remember in history.
+set history=1000                    " Number of things to remember in history.
 set number
 set backspace=indent,eol,start
 
@@ -99,16 +101,17 @@ set tags+=tags,TAGS,./**/tags,./**/TAGS
 " Maps
 " run selected ruby script
 "vnoremap <C-F5> Y<Esc>:!ruby<Space>-e<Space>@0<CR>
-" jump to under cursor tag
-map ,f [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 " ctag: regenerate tag list
-nnoremap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
+nmap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
 " toggle nert-tree-left-side window
-nnoremap <C-F11> <Esc>:NERDTreeToggle<CR>
+nmap <C-F11> <Esc>:NERDTreeToggle<CR>
 " start Ag!
-nnoremap <C-F7> <Esc>:Ag!
+nmap <C-F7> <Esc>:Ag!
 " toggle gundo-left-side window
 nnoremap <C-F6> :GundoToggle<CR>
+" GitGutter
+nmap ,gg <Esc>:GitGutterToggle<CR>
+nmap ,gG <Esc>:GitGutterLineHighlightsToggle<CR>
 
 
 
@@ -121,3 +124,7 @@ let g:ctrlp_custom_ignore = {
 " Ag plugin
 let g:agprg="ag --column --smart-case"
 let g:aghighlight=1
+
+" GitGutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
