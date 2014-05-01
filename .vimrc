@@ -1,8 +1,8 @@
 ﻿set nocompatible                    " disable vi compatibility.
 
 filetype off                        " required by Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " My bundles here:
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
@@ -19,9 +19,10 @@ Bundle 'rking/ag.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'jlanzarotta/bufexplorer'
 Bundle 'ap/vim-css-color'
-Bundle 'airblade/vim-gitgutter'
+Bundle 'vim-gitgutter'
 Bundle 'godlygeek/tabular'
 Bundle 'yaymukund/vim-rabl'
+call vundle#end()
 
 filetype plugin on
 filetype plugin indent on
