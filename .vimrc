@@ -22,6 +22,7 @@ Bundle 'ap/vim-css-color'
 Bundle 'vim-gitgutter'
 Bundle 'godlygeek/tabular'
 Bundle 'yaymukund/vim-rabl'
+Bundle 'mustache/vim-mustache-handlebars'
 call vundle#end()
 
 filetype plugin on
@@ -69,7 +70,7 @@ set statusline=%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&en
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 set list
 set listchars=tab:»-,trail:-
-set guifont=Courier\ New\ 10
+set guifont=Courier\ New\ 12
 set background=dark
 colorscheme evening
 set cursorcolumn

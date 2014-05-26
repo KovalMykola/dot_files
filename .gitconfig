@@ -15,3 +15,5 @@
 [user]
 	email = andrijpu@gmail.com
 	name = andrij
+[credential]
+	helper = cache --timeout=360000
