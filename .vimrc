@@ -102,15 +102,15 @@ set tags+=tags,TAGS,./**/tags,./**/TAGS
 
 " Maps
 " run selected ruby script
-"vnoremap <C-F5> Y<Esc>:!ruby<Space>-e<Space>@0<CR>
+vnoremap ,<F5> Y<Esc>:!ruby<Space>-e<Space>@0<CR>
 " ctag: regenerate tag list
-nmap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
+nmap ,<F12> <Esc>:!ctags<Space>-R<Space>.<CR>
 " toggle nert-tree-left-side window
-nmap <C-F11> <Esc>:NERDTreeToggle<CR>
+nmap ,<F11> <Esc>:NERDTreeToggle<CR>
 " start Ag!
-nmap <C-F7> <Esc>:Ag!
+nmap ,<F7> <Esc>:Ag!
 " toggle gundo-left-side window
-nnoremap <C-F6> :GundoToggle<CR>
+nnoremap ,<F6> :GundoToggle<CR>
 " GitGutter
 nmap ,gg <Esc>:GitGutterToggle<CR>
 nmap ,gG <Esc>:GitGutterLineHighlightsToggle<CR>
