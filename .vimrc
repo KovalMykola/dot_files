@@ -11,6 +11,7 @@ Bundle 'kien/ctrlp.vim'
 " snipMate sub-plugins
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
+Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 
 Bundle 'PA_ruby_ri'
@@ -103,15 +104,15 @@ set tags+=tags,TAGS,./**/tags,./**/TAGS
 
 " Maps
 " run selected ruby script
-vnoremap ,<F5> Y<Esc>:!ruby<Space>-e<Space>@0<CR>
+vnoremap <C-F5> Y<Esc>:!ruby<Space>-e<Space>@0<CR>
 " ctag: regenerate tag list
-nmap ,<F12> <Esc>:!ctags<Space>-R<Space>.<CR>
+nmap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
 " toggle nert-tree-left-side window
-nmap ,<F11> <Esc>:NERDTreeToggle<CR>
+nmap <C-F11> <Esc>:NERDTreeToggle<CR>
 " start Ag!
-nmap ,<F7> <Esc>:Ag!
+nmap <C-F7> <Esc>:Ag!
 " toggle gundo-left-side window
-nnoremap ,<F6> :GundoToggle<CR>
+nnoremap <C-F6> :GundoToggle<CR>
 " GitGutter
 nmap ,gg <Esc>:GitGutterToggle<CR>
 nmap ,gG <Esc>:GitGutterLineHighlightsToggle<CR>
