@@ -59,6 +59,7 @@ set linebreak
 
 " Folding
 set foldenable                      " Turn on folding
+set foldlevel=1
 set foldmethod=syntax
 
 " Window
