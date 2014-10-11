@@ -12,6 +12,7 @@
 	lg = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold green)<%an>%Creset' --abbrev-commit --date=relative
 	ci = commit
 	br = branch -a
+	pushall = push --recurse-submodules=on-demand
 [user]
 	email = andrijpu@gmail.com
 	name = andrij

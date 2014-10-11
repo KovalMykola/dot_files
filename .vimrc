@@ -73,7 +73,7 @@ set statusline=%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&en
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 set list
 set listchars=tab:»-,trail:-
-set guifont=Courier\ New\ 12
+set guifont=DejaVu\ Sans\ Mono 13
 set background=dark
 colorscheme evening
 set cursorcolumn
