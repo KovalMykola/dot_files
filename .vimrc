@@ -6,6 +6,8 @@ call vundle#begin()
 " My bundles here:
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 
 " snipMate sub-plugins
@@ -73,7 +75,7 @@ set statusline=%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&en
 highlight OverLength ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 set list
 set listchars=tab:»-,trail:-
-set guifont=DejaVu\ Sans\ Mono:h13
+set guifont=DejaVu\ Sans\ Mono\ 13
 set background=dark
 colorscheme evening
 set cursorcolumn
@@ -110,6 +112,8 @@ vnoremap <C-F5> Y<Esc>:!ruby<Space>-e<Space>@0<CR>
 nmap <C-F12> <Esc>:!ctags<Space>-R<Space>.<CR>
 " toggle nert-tree-left-side window
 nmap <C-F11> <Esc>:NERDTreeToggle<CR>
+" toggle tagbar-right-side window
+nmap <S-F11> <Esc>:TagbarToggle<CR>
 " start Ag!
 nmap <C-F7> <Esc>:Ag!
 " toggle gundo-left-side window
@@ -130,6 +134,6 @@ let g:ctrlp_custom_ignore = {
 let g:agprg="ag --column --smart-case"
 let g:aghighlight=1
 
-" GitGutter
+" GitGutter plugin
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
