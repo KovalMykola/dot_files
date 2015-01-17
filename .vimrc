@@ -27,6 +27,7 @@ Bundle 'vim-gitgutter'
 Bundle 'godlygeek/tabular'
 Bundle 'yaymukund/vim-rabl'
 Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'mattn/emmet-vim'
 call vundle#end()
 
 filetype plugin on
@@ -131,8 +132,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Ag plugin
-let g:agprg="ag --column --smart-case"
-let g:aghighlight=1
+let g:ag_prg="ag --column --smart-case"
+let g:ag_highlight=1
 
 " GitGutter plugin
 let g:gitgutter_realtime = 0
