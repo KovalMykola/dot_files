@@ -4,30 +4,44 @@ filetype off                        " required by Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " My bundles here:
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Xuyuanp/nerdtree-git-plugin'
-Bundle 'majutsushi/tagbar'
-Bundle 'kien/ctrlp.vim'
+" files/windows
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'rking/ag.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'jlanzarotta/bufexplorer'
+
+" ruby/rails/js etc.
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'PA_ruby_ri'
+Plugin 'yaymukund/vim-rabl'
+Plugin 'stefanoverna/vim-i18n'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'ap/vim-css-color'
+Plugin '1995eaton/vim-better-css-completion'
+Plugin 'mattn/emmet-vim'
+Plugin 'pangloss/vim-javascript'
+
 
 " snipMate sub-plugins
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
 
-Bundle 'PA_ruby_ri'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'rking/ag.vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'jlanzarotta/bufexplorer'
-Bundle 'ap/vim-css-color'
-Bundle '1995eaton/vim-better-css-completion'
-Bundle 'vim-gitgutter'
-Bundle 'godlygeek/tabular'
-Bundle 'yaymukund/vim-rabl'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'mattn/emmet-vim'
+" Git
+Plugin 'vim-gitgutter'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
+
+" Misc
+Plugin 'godlygeek/tabular'
+Plugin 'adimit/prolog.vim'
+
 call vundle#end()
 
 filetype plugin on
@@ -138,3 +152,6 @@ let g:ag_highlight=1
 " GitGutter plugin
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+
+" Vim-i18n plugin
+vmap ,z :call I18nTranslateString()<CR>
