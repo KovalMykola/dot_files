@@ -42,6 +42,7 @@ Plugin 'gregsexton/gitv'
 " Misc
 Plugin 'godlygeek/tabular'
 Plugin 'adimit/prolog.vim'
+Plugin 'mechatroner/rainbow_csv'
 
 call vundle#end()
 
